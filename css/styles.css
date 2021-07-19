@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.backgound {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.col--1 {
+  background: url('../images/bg-pattern-desktop.svg') no-repeat;
+  background-size: cover;
+  padding: 6vh 12vw 0;
+}
+
+.were {
+  font-weight: 300;
+  font-size: 65px;
+  color: #CE9797;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: 0.25em;
+  margin-top: 16vh;
+  color: #413A3A;
+}
+
+.para {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #CE9797;
+}
+
+.input {
+  border: 1px solid rgba(206, 151, 151, 0.7);
+  color: #413A3A;
+  width: 90%;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 30px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(206, 151, 151, 0.7);
+}
+
+.error-icon {
+  position: relative;
+  right: 8vw;
+  visibility: hidden;
+}
+
+.button {
+  position: absolute;
+  left: 38vw;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90px;
+  height: 50px;
+  border-radius: 30px;
+  background-image: url('../images/icon-arrow.svg'), linear-gradient(180deg, #F8BFBF 0%, #EE8C8C 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button:hover {
+  background-image: url('../images/icon-arrow.svg'), linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 245, 245, 0.5) 100%), linear-gradient(180deg, #F8BFBF 0%, #EE8C8C 100%);
+}
+
+.hero-img {
+  width: 100%;
+}
+
+#validation-txt {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .heading, .para {
+    text-align: center;
+  }
+
+  .heading {
+    margin-top: 15px;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .button {
+    left: 67%;
+  }
+
+  .hero-img {
+    margin-top: 100px;
+    content: url('../images/hero-mobile.jpg');
+  }
+
+  .logo {
+    position: absolute;
+    top: 33.5px;
+  }
+
+  .error-icon {
+    right: 18%;
+  }
+}
+
+@media (max-width: 590px) {
+  .heading {
+    font-size: 50px;
+    margin-top: 15px;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .hero-img {
+    content: url('../images/hero-mobile.jpg');
+  }
+
+  #validation-txt {
+    margin-bottom: 50px;
+  }
+
+  .error-icon {
+    right: 30%;
+  }
+}
+
+@media (max-width: 389px) {
+  .button {
+    position: absolute;
+    top: 103.1%;
+    width: 55px;
+  }
+
+  .error-icon {
+    right: 31%;
+  }
+}
